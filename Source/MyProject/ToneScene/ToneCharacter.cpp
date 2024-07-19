@@ -12,7 +12,6 @@ AToneCharacter::AToneCharacter()
 	PrimaryActorTick.bStartWithTickEnabled = true;
 	// PlayerCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("PlayerCamera"));
 	// PlayerCamera->SetupAttachment(GetCapsuleComponent());
-
 	GetCapsuleComponent()->InitCapsuleSize(42.f, 96.f);
 	bUseControllerRotationPitch = true;
 	bUseControllerRotationRoll = true;

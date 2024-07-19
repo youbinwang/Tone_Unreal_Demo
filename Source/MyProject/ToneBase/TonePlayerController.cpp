@@ -6,11 +6,14 @@
 #include "../ToneScene/ToneCharacter.h"
 // #inlcude "Engine/World.h"
 #include "Blueprint/AIBlueprintHelperLibrary.h"
+#include "MyProject/ToneScene/ClickableObject.h"
 
 
 ATonePlayerController::ATonePlayerController()
 {
 	bShowMouseCursor = true;
+	bEnableClickEvents = true;
+	bEnableMouseOverEvents = true;
 	DefaultMouseCursor = EMouseCursor::Default;
 	CachedDestination = FVector::ZeroVector;
 	FollowTime = 0.f;
@@ -75,16 +78,26 @@ void ATonePlayerController::OnSetDestinationTriggered()
 	}
 	if (bHitSuccessful)
 	{
-		CachedDestination = Hit.Location;
+		AClickableObject* hitAct = Cast<AClickableObject>(Hit.GetActor());
+		if (hitAct != nullptr)
+		{
+			// UE_LOG(LogTemp, Warning, TEXT("Pawn selected"));
+		}
+		else
+		{
+			CachedDestination = Hit.Location;
+			UE_LOG(LogTemp, Warning, TEXT("Destination position is %s"), *CachedDestination.ToString());
+			APawn* ControlledPawn = GetPawn();
+			AToneCharacter* curCharacter = Cast<AToneCharacter>(ControlledPawn);
+			if(curCharacter != nullptr)
+			{
+				// FVector WorldDirection = (CachedDestination - curCharacter->GetActorLocation()).GetSafeNormal();
+				curCharacter->MoveTo(CachedDestination);
+			}
+		}
+		
 	}
-	UE_LOG(LogTemp, Warning, TEXT("Destination position is %s"), *CachedDestination.ToString());
-	APawn* ControlledPawn = GetPawn();
-	AToneCharacter* curCharacter = Cast<AToneCharacter>(ControlledPawn);
-	if(curCharacter != nullptr)
-	{
-		// FVector WorldDirection = (CachedDestination - curCharacter->GetActorLocation()).GetSafeNormal();
-		curCharacter->MoveTo(CachedDestination);
-	}
+	
 }
 
 void ATonePlayerController::OnSetDestinationReleased()
@@ -197,7 +210,3 @@ void ATonePlayerController::CancelCameraMove()
 {
 	IsMovingFB = false;
 }
-
-
-
-
