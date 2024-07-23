@@ -20,6 +20,12 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	float HoverVelocity = .3f;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	float HoverInterval = 1.f;
+
 public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
@@ -30,11 +36,15 @@ public:
 
 	virtual void NotifyActorEndCursorOver() override;
 
+	void SetHoverStatus();
 
 	UPROPERTY(EditAnywhere)
 	UStaticMeshComponent* ClickableMesh;
 	
-	UPROPERTY(EditAnywhere)
-    UBoxComponent* BoxCollider;
+	// UPROPERTY(EditAnywhere)
+ //    UBoxComponent* BoxCollider;
 
+private:
+	bool isHovered = false;
+	float HoverIntervalTime;
 };
