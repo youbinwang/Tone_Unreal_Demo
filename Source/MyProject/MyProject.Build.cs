@@ -6,7 +6,7 @@ public class MyProject : ModuleRules
 {
 	public MyProject(ReadOnlyTargetRules Target) : base(Target)
 	{
-		PrivateDependencyModuleNames.AddRange(new string[] { "AIModule", "Niagara" });
+		PrivateDependencyModuleNames.AddRange(new string[] { "AIModule", "Niagara", "Json", "JsonUtilities" });
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 	
 		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "EnhancedInput", "UnrealEd", "LevelEditor" });
