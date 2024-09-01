@@ -47,19 +47,23 @@ void AClickableObject::Tick(float DeltaTime)
 void AClickableObject::NotifyActorOnClicked(FKey ButtonPressed)
 {
 	Super::NotifyActorOnClicked(ButtonPressed);
-	UE_LOG(LogTemp, Display, TEXT("Pawn Selected method 2"));
 	// FVector curLocation = ClickableMesh->GetRelativeLocation();
 	// ClickableMesh->SetRelativeLocation(curLocation + FVector(0.f, 0.f, 100.f));
 	// ClickableMesh->AddForce({ .0f, .0f,  Velocity* 500.f }, NAME_None, true);
+
+	if (UFunction* Function = FindFunction(FName("OnMouseClicked")))
+	{
+		ProcessEvent(Function, nullptr);
+	}
 
 }
 
 void AClickableObject::NotifyActorBeginCursorOver()
 {
-	if(!isHovered) {
-		Super::NotifyActorBeginCursorOver();
-		UE_LOG(LogTemp, Display, TEXT("Pawn Hovered now"));
-		isHovered = true;
+	Super::NotifyActorBeginCursorOver();
+	if (UFunction* Function = FindFunction(FName("OnMouseHovered")))
+	{
+		ProcessEvent(Function, nullptr);
 	}
 }
 
@@ -73,6 +77,21 @@ void AClickableObject::NotifyActorEndCursorOver()
 void AClickableObject::SetHoverStatus()
 {
 	ClickableMesh->AddImpulse({ .0f, .0f,  HoverVelocity* 500.f }, NAME_None, true);
+
+}
+
+void AClickableObject::OnHoverJump()
+{
+	if(!isHovered) {
+		Super::NotifyActorBeginCursorOver();
+		UE_LOG(LogTemp, Display, TEXT("Pawn Hovered now"));
+		isHovered = true;
+	}
+}
+
+void AClickableObject::OnClickPrint()
+{
+	UE_LOG(LogTemp, Display, TEXT("Pawn Selected method 2"));
 
 }
 

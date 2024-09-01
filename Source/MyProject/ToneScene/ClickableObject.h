@@ -40,9 +40,18 @@ public:
 
 	UPROPERTY(EditAnywhere)
 	UStaticMeshComponent* ClickableMesh;
-	
-	// UPROPERTY(EditAnywhere)
- //    UBoxComponent* BoxCollider;
+
+	UFUNCTION(BlueprintImplementableEvent)
+	void OnMouseHovered();
+
+	UFUNCTION(BlueprintImplementableEvent)
+	void OnMouseClicked();
+
+	UFUNCTION(BlueprintCallable)
+	void OnHoverJump();
+
+	UFUNCTION(BlueprintCallable)
+	void OnClickPrint();
 
 private:
 	bool isHovered = false;
