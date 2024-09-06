@@ -6,10 +6,15 @@ public class MyProject : ModuleRules
 {
 	public MyProject(ReadOnlyTargetRules Target) : base(Target)
 	{
+		if (Target.bBuildEditor)
+		{
+			PrivateDependencyModuleNames.AddRange(new string[] { "UnrealEd", "LevelEditor"});
+
+		}
 		PrivateDependencyModuleNames.AddRange(new string[] { "AIModule", "Niagara", "Json", "JsonUtilities" });
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 	
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "EnhancedInput", "UnrealEd", "LevelEditor" });
+		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "EnhancedInput" });
 
 		// Uncomment if you are using Slate UI
 		// PrivateDependencyModuleNames.AddRange(new string[] { "Slate", "SlateCore" });
