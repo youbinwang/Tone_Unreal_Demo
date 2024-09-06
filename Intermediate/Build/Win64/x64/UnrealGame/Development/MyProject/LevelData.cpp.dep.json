@@ -1,0 +1,17 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\class material\\uepractice\\myproject\\source\\myproject\\leveldata\\leveldata.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\class material\\uepractice\\myproject\\intermediate\\build\\win64\\x64\\myproject\\development\\engine\\sharedpch.engine.cpp20.h.pch",
+        "Includes": [
+            "d:\\class material\\uepractice\\myproject\\intermediate\\build\\win64\\x64\\unrealgame\\development\\myproject\\definitions.myproject.h",
+            "d:\\class material\\uepractice\\myproject\\source\\myproject\\leveldata\\leveldata.h",
+            "d:\\class material\\uepractice\\myproject\\source\\myproject\\leveldata\\characterdata.h",
+            "d:\\class material\\uepractice\\myproject\\intermediate\\build\\win64\\unrealgame\\inc\\myproject\\uht\\characterdata.generated.h",
+            "d:\\class material\\uepractice\\myproject\\intermediate\\build\\win64\\unrealgame\\inc\\myproject\\uht\\leveldata.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\class material\\uepractice\\myproject\\source\\myproject\\tonebase\\howtofindanything.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\class material\\uepractice\\myproject\\intermediate\\build\\win64\\x64\\myprojecteditor\\development\\unrealed\\sharedpch.unrealed.cpp20.h.pch",
+        "Includes": [
+            "d:\\class material\\uepractice\\myproject\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\myproject\\definitions.myproject.h",
+            "d:\\class material\\uepractice\\myproject\\source\\myproject\\tonebase\\howtofindanything.h",
+            "d:\\class material\\uepractice\\myproject\\intermediate\\build\\win64\\unrealeditor\\inc\\myproject\\uht\\howtofindanything.generated.h",
+            "d:\\epic games\\ue_5.3\\engine\\source\\editor\\leveleditor\\public\\leveleditor.h",
+            "d:\\epic games\\ue_5.3\\engine\\source\\editor\\leveleditor\\public\\ileveleditor.h",
+            "d:\\epic games\\ue_5.3\\engine\\source\\runtime\\engine\\public\\elements\\framework\\engineelementslibrary.h",
+            "d:\\epic games\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\engineelementslibrary.generated.h",
+            "d:\\epic games\\ue_5.3\\engine\\source\\editor\\leveleditor\\public\\viewporttypedefinition.h",
+            "d:\\epic games\\ue_5.3\\engine\\source\\editor\\leveleditor\\public\\leveleditoroutlinersettings.h",
+            "d:\\epic games\\ue_5.3\\engine\\source\\developer\\toolwidgets\\public\\filters\\genericfilter.h",
+            "d:\\epic games\\ue_5.3\\engine\\source\\developer\\toolwidgets\\public\\filters\\filterbase.h",
+            "d:\\epic games\\ue_5.3\\engine\\source\\editor\\unrealed\\public\\unrealedglobals.h",
+            "d:\\epic games\\ue_5.3\\engine\\source\\editor\\unrealed\\classes\\editor\\unrealedengine.h",
+            "d:\\epic games\\ue_5.3\\engine\\source\\editor\\unrealed\\public\\ipackageautosaver.h",
+            "d:\\epic games\\ue_5.3\\engine\\source\\developer\\sourcecontrol\\public\\isourcecontrolprovider.h",
+            "d:\\epic games\\ue_5.3\\engine\\source\\developer\\sourcecontrol\\public\\isourcecontrolchangelist.h",
+            "d:\\epic games\\ue_5.3\\engine\\source\\developer\\sourcecontrol\\public\\isourcecontrolchangeliststate.h",
+            "d:\\epic games\\ue_5.3\\engine\\source\\developer\\sourcecontrol\\public\\isourcecontrolstate.h",
+            "d:\\epic games\\ue_5.3\\engine\\source\\developer\\sourcecontrol\\public\\isourcecontroloperation.h",
+            "d:\\epic games\\ue_5.3\\engine\\source\\developer\\sourcecontrol\\public\\sourcecontrolresultinfo.h",
+            "d:\\epic games\\ue_5.3\\engine\\source\\editor\\unrealed\\public\\componentvisualizer.h",
+            "d:\\epic games\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\unrealed\\uht\\componentvisualizer.generated.h",
+            "d:\\epic games\\ue_5.3\\engine\\source\\editor\\unrealed\\public\\componentvisualizermanager.h",
+            "d:\\epic games\\ue_5.3\\engine\\source\\editor\\unrealed\\classes\\editor\\templatemapinfo.h",
+            "d:\\epic games\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\unrealed\\uht\\templatemapinfo.generated.h",
+            "d:\\epic games\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\unrealed\\uht\\unrealedengine.generated.h",
+            "d:\\epic games\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\engine\\levelscriptblueprint.h",
+            "d:\\epic games\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\levelscriptblueprint.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

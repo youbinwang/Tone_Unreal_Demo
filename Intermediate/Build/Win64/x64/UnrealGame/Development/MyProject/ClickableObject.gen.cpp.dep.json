@@ -1,0 +1,19 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\class material\\uepractice\\myproject\\intermediate\\build\\win64\\unrealgame\\inc\\myproject\\uht\\clickableobject.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\class material\\uepractice\\myproject\\intermediate\\build\\win64\\x64\\myproject\\development\\engine\\sharedpch.engine.cpp20.h.pch",
+        "Includes": [
+            "d:\\class material\\uepractice\\myproject\\intermediate\\build\\win64\\x64\\unrealgame\\development\\myproject\\definitions.myproject.h",
+            "d:\\class material\\uepractice\\myproject\\source\\myproject\\tonescene\\clickableobject.h",
+            "d:\\epic games\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\components\\boxcomponent.h",
+            "d:\\epic games\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\components\\shapecomponent.h",
+            "d:\\epic games\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealgame\\inc\\engine\\uht\\shapecomponent.generated.h",
+            "d:\\epic games\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealgame\\inc\\engine\\uht\\boxcomponent.generated.h",
+            "d:\\class material\\uepractice\\myproject\\intermediate\\build\\win64\\unrealgame\\inc\\myproject\\uht\\clickableobject.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\class material\\uepractice\\myproject\\source\\myproject\\tonebase\\readwritejsonfile.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\class material\\uepractice\\myproject\\intermediate\\build\\win64\\x64\\myproject\\development\\engine\\sharedpch.engine.cpp20.h.pch",
+        "Includes": [
+            "d:\\class material\\uepractice\\myproject\\intermediate\\build\\win64\\x64\\unrealgame\\development\\myproject\\definitions.myproject.h",
+            "d:\\class material\\uepractice\\myproject\\source\\myproject\\tonebase\\readwritejsonfile.h",
+            "d:\\class material\\uepractice\\myproject\\intermediate\\build\\win64\\unrealgame\\inc\\myproject\\uht\\readwritejsonfile.generated.h",
+            "d:\\class material\\uepractice\\myproject\\source\\myproject\\tonebase\\readwritefile.h",
+            "d:\\class material\\uepractice\\myproject\\intermediate\\build\\win64\\unrealgame\\inc\\myproject\\uht\\readwritefile.generated.h",
+            "d:\\epic games\\ue_5.3\\engine\\source\\runtime\\jsonutilities\\public\\jsonobjectconverter.h",
+            "d:\\epic games\\ue_5.3\\engine\\source\\runtime\\jsonutilities\\public\\jsonobjectwrapper.h",
+            "d:\\epic games\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealgame\\inc\\jsonutilities\\uht\\jsonobjectwrapper.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
